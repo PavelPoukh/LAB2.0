@@ -15,8 +15,9 @@ Batch_size = 256, epoch = 200.
         tf.keras.layers.MaxPool2D(),
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)
-        ![Image alt](https://github.com/PavelPoukh/LAB2.0/blob/master/all.png)
-        
+      
+   ![Image alt](https://github.com/PavelPoukh/LAB2.0/blob/master/all.png)
+   
   ## Нейросеть 1
  
   Добавляем 1 полносвязный слой (filters=16, kernel_size=3)
@@ -30,7 +31,8 @@ Batch_size = 256, epoch = 200.
         tf.keras.layers.MaxPool2D(),
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)
-        ![Image alt](https://github.com/PavelPoukh/LAB2.0/blob/master/all2.png)
+       
+  ![Image alt](https://github.com/PavelPoukh/LAB2.0/blob/master/all2.png)
         
   ## Нейросеть 2
   
@@ -47,7 +49,8 @@ Batch_size = 256, epoch = 200.
         tf.keras.layers.MaxPool2D(),
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)
-        ![Image alt](https://github.com/PavelPoukh/LAB2.0/blob/master/all3.png)
+  
+   ![Image alt](https://github.com/PavelPoukh/LAB2.0/blob/master/all3.png)
         
   ## Нейросеть 3
   
@@ -66,7 +69,8 @@ Batch_size = 256, epoch = 200.
         tf.keras.layers.MaxPool2D(),
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)
-        ![Image alt](https://github.com/PavelPoukh/LAB2.0/blob/master/all4.png)
+  
+   ![Image alt](https://github.com/PavelPoukh/LAB2.0/blob/master/all4.png)
         
   ## Нейросеть 4
   
@@ -85,4 +89,5 @@ Batch_size = 256, epoch = 200.
         tf.keras.layers.MaxPool2D(),
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)
-        ![Image alt](https://github.com/PavelPoukh/LAB2.0/blob/master/all5.png)
+      
+   ![Image alt](https://github.com/PavelPoukh/LAB2.0/blob/master/all5.png)
