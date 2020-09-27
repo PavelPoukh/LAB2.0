@@ -1,7 +1,74 @@
 # LAB2.0
 Суть второй лабораторной работы: попытаться обучить нейросеть с различными начальными параметрами:
 
-Число слоев
-Количество нейронов на слоях
-Шагом обучения
+1. Число слоев
+2. Количество нейронов на слоях
+3. Шаг обучения
 Batch_size = 256, epoch = 200.
+
+## Исходная нейросеть
+        tf.keras.layers.Input(shape=(224,224,3)),
+        tf.keras.layers.Conv2D(filters=8, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Conv2D(filters=8, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Flatten(),
+        tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)
+        
+  ## Нейросеть 1
+  
+        tf.keras.layers.Input(shape=(224,224,3)),
+        tf.keras.layers.Conv2D(filters=8, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Conv2D(filters=8, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Conv2D(filters=16, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Flatten(),
+        tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)
+        
+  ## Нейросеть 2
+  
+        tf.keras.layers.Input(shape=(224,224,3)),
+        tf.keras.layers.Conv2D(filters=8, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Conv2D(filters=8, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Conv2D(filters=16, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Conv2D(filters=32, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Flatten(),
+        tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)
+        
+  ## Нейросеть 3
+  
+        tf.keras.layers.Input(shape=(224,224,3)),
+        tf.keras.layers.Conv2D(filters=8, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Conv2D(filters=8, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Conv2D(filters=16, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Conv2D(filters=32, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Conv2D(filters=64, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Flatten(),
+        tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)
+        
+  ## Нейросеть 4
+  
+        tf.keras.layers.Input(shape=(224,224,3)),
+        tf.keras.layers.Conv2D(filters=8, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Conv2D(filters=8, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Conv2D(filters=16, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Conv2D(filters=32, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Conv2D(filters=16, kernel_size=3),
+        tf.keras.layers.MaxPool2D(),
+        tf.keras.layers.Flatten(),
+        tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)
